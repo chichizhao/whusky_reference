@@ -1,6 +1,5 @@
-Hello！大家好，这是武汉大学生命科学学院参考文献格式，插入软件是zotero。支持中英文混排，但是注意，要将中文文献的格式设置为 zh-CN。
-如果有bug 不变之处 欢迎大家反馈
-plz set the chinese language as zh-CN
+# Hello！大家好，这是武汉大学生命科学学院参考文献格式，插入软件是zotero。支持中英文混排，但是注意，要将中文文献的格式设置为 zh-CN。
+如果有bug 不变之处 欢迎大家反馈。 plz set the chinese language as zh-CN
 
 # 下面就是要求
 1.著者-出版年制在正文中的标注方式
