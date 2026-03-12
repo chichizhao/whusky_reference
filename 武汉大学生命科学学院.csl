@@ -1,30 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" name-as-sort-order="all" sort-separator=" " demote-non-dropping-particle="never" initialize-with=" " initialize-with-hyphen="false" page-range-format="expanded" default-locale="en-US" default-locale-sort="zh-CN">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>武汉大学生命科学学院</title>
-    <id>https://zotero-chinese.com/styles/武汉大学生命科学学院</id>
-    <link href="https://zotero-chinese.com/styles/武汉大学生命科学学院" rel="self"/>
-    <link href="https://zotero-chinese.com/styles/武汉大学生命科学学院" rel="independent-parent"/>
-    <author>
-      <name>OpenClaw</name>
-    </author>
+    <id>http://www.zotero.org/styles/武汉大学生命科学学院</id>
+    <link href="http://www.zotero.org/styles/武汉大学生命科学学院" rel="self"/>
     <contributor>
-      <name>Zeping Lee</name>
-      <email>zepinglee@gmail.com</email>
+      <name>CHICHI</name>
+      <email>zcczcc@whu.edu.cn</email>
     </contributor>
     <category citation-format="author-date"/>
     <category field="botany"/>
     <summary>按武汉大学生命科学学院著者-出版年制要求调整：英文引文使用半角逗号，中文“等”不留空格，参考文献统一半角标点，期刊默认不显示期号。</summary>
-    <updated>2026-03-12T16:12:00+08:00</updated>
+    <updated>2026-03-12T10:01:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
-
   <locale xml:lang="en">
     <terms>
       <term name="thesis">PhD dissertation</term>
     </terms>
   </locale>
-
   <locale xml:lang="zh">
     <terms>
       <term name="anonymous" form="short">佚名</term>
@@ -37,7 +32,6 @@
       <term name="thesis">博士学位论文</term>
     </terms>
   </locale>
-
   <locale>
     <style-options punctuation-in-quote="false"/>
     <date form="numeric">
@@ -52,7 +46,6 @@
   </locale>
   <macro name="edition">
     <choose>
-      <!-- 中文版次：第2版、第3版，第1版不显示 -->
       <if is-numeric="edition" lang="zh">
         <choose>
           <if variable="edition" value="1" match="none">
@@ -60,7 +53,6 @@
           </if>
         </choose>
       </if>
-      <!-- 英文版次：2nd ed, 3rd ed, 4th ed，第1版不显示 -->
       <else-if is-numeric="edition">
         <choose>
           <if variable="edition" value="2">
@@ -74,17 +66,14 @@
           </else-if>
         </choose>
       </else-if>
-      <!-- 其他情况直接输出 -->
       <else>
         <text variable="edition"/>
       </else>
     </choose>
   </macro>
-
   <macro name="anon">
     <text term="anonymous" form="short" strip-periods="true" text-case="capitalize-first"/>
   </macro>
-
   <macro name="author">
     <names variable="author">
       <name delimiter=", "/>
@@ -101,13 +90,11 @@
       </substitute>
     </names>
   </macro>
-
   <macro name="author-ZHtoEN">
     <names variable="original-author">
       <name initialize="false" delimiter=", "/>
     </names>
   </macro>
-
   <macro name="author-intext-en">
     <names variable="author">
       <name form="short" delimiter=", " and="symbol"/>
@@ -124,7 +111,6 @@
       </substitute>
     </names>
   </macro>
-
   <macro name="author-intext-zh">
     <names variable="author">
       <name delimiter="、" and="text"/>
@@ -142,7 +128,6 @@
       </substitute>
     </names>
   </macro>
-
   <macro name="author-sort">
     <choose>
       <if variable="original-author">
@@ -153,7 +138,6 @@
       </else>
     </choose>
   </macro>
-
   <macro name="volume">
     <choose>
       <if type="article article-journal article-magazine article-newspaper periodical" match="none">
@@ -171,7 +155,6 @@
       </if>
     </choose>
   </macro>
-
   <macro name="title">
     <group delimiter=": ">
       <text variable="title"/>
@@ -198,18 +181,17 @@
       <if type="thesis">
         <choose>
           <if variable="genre">
-            <text value=": " />
+            <text value=": "/>
             <text variable="genre" text-case="capitalize-first" prefix="[" suffix="]"/>
           </if>
           <else>
-            <text value=": " />
+            <text value=": "/>
             <text term="thesis" text-case="capitalize-first" prefix="[" suffix="]"/>
           </else>
         </choose>
       </if>
     </choose>
   </macro>
-
   <macro name="title-ZHtoEN">
     <group delimiter=": ">
       <text variable="original-title"/>
@@ -230,25 +212,23 @@
       <if type="thesis">
         <choose>
           <if variable="original-genre">
-            <text value=": " />
+            <text value=": "/>
             <text variable="original-genre" text-case="capitalize-first" prefix="[" suffix="]"/>
           </if>
           <else>
-            <text value=": " />
+            <text value=": "/>
             <text value="PhD dissertation" prefix="[" suffix="]"/>
           </else>
         </choose>
       </if>
     </choose>
   </macro>
-
   <macro name="secondary-contributors">
     <names variable="translator">
       <name delimiter=", "/>
       <label form="short" prefix=", "/>
     </names>
   </macro>
-
   <macro name="container-contributors">
     <names variable="editor">
       <name delimiter=", "/>
@@ -259,7 +239,6 @@
       </substitute>
     </names>
   </macro>
-
   <macro name="container-booklike">
     <group delimiter=". ">
       <text macro="container-contributors"/>
@@ -276,7 +255,6 @@
       </choose>
     </group>
   </macro>
-
   <macro name="container-booklike-ZHtoEN">
     <choose>
       <if variable="original-container-title">
@@ -287,7 +265,6 @@
       </else-if>
     </choose>
   </macro>
-
   <macro name="container-periodical">
     <choose>
       <if type="article-newspaper">
@@ -315,7 +292,6 @@
       </else>
     </choose>
   </macro>
-
   <macro name="container-periodical-ZHtoEN">
     <choose>
       <if type="article-newspaper">
@@ -343,7 +319,6 @@
       </else>
     </choose>
   </macro>
-
   <macro name="edition">
     <choose>
       <if is-numeric="edition">
@@ -357,14 +332,12 @@
       </else>
     </choose>
   </macro>
-
   <macro name="year-volume-issue">
     <group delimiter=", ">
       <text macro="issued-year"/>
       <text variable="volume"/>
     </group>
   </macro>
-
   <macro name="publisher">
     <choose>
       <if type="patent">
@@ -401,7 +374,6 @@
       </else-if>
     </choose>
   </macro>
-
   <macro name="publisher-ZHtoEN">
     <choose>
       <if type="patent">
@@ -438,7 +410,6 @@
       </else-if>
     </choose>
   </macro>
-
   <macro name="issued-year">
     <choose>
       <if variable="issued">
@@ -456,11 +427,9 @@
       </else>
     </choose>
   </macro>
-
   <macro name="issued-date">
     <date variable="issued" form="numeric"/>
   </macro>
-
   <macro name="accessed-date">
     <choose>
       <if type="dataset post post-weblog software webpage" match="any">
@@ -472,7 +441,6 @@
       </if>
     </choose>
   </macro>
-
   <macro name="access">
     <choose>
       <if type="dataset post post-weblog software webpage" match="any">
@@ -480,7 +448,6 @@
       </if>
     </choose>
   </macro>
-
   <macro name="entry-layout">
     <group delimiter=". ">
       <text macro="author"/>
@@ -524,7 +491,6 @@
       <text macro="access"/>
     </group>
   </macro>
-
   <macro name="entry-layout-ZHtoEN">
     <group delimiter=". ">
       <text macro="author-ZHtoEN"/>
@@ -562,7 +528,6 @@
       <text macro="access"/>
     </group>
   </macro>
-
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-givenname="true" disambiguate-add-year-suffix="true" collapse="year" cite-group-delimiter="; ">
     <sort>
       <key macro="author-intext-en"/>
@@ -581,7 +546,6 @@
       </group>
     </layout>
   </citation>
-
   <bibliography entry-spacing="0" hanging-indent="true">
     <sort>
       <key macro="author-sort"/>
