@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" name-as-sort-order="all" sort-separator=" " demote-non-dropping-particle="never" initialize-with=" " initialize-with-hyphen="false" page-range-format="expanded" default-locale="en-US" default-locale-sort="zh-CN">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
@@ -12,7 +12,7 @@
     <category citation-format="author-date"/>
     <category field="botany"/>
     <summary>按武汉大学生命科学学院著者-出版年制要求调整：英文引文使用半角逗号，中文“等”不留空格，参考文献统一半角标点，期刊默认不显示期号。</summary>
-    <updated>2026-03-12T10:01:00+00:00</updated>
+    <updated>2026-03-18T08:25:29+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -539,7 +539,7 @@
         <text macro="issued-year"/>
       </group>
     </layout>
-    <layout prefix="（" suffix="）" delimiter="; " locale="en">
+    <layout prefix="（" suffix="）" delimiter="; ">
       <group delimiter=", ">
         <text macro="author-intext-en"/>
         <text macro="issued-year"/>
