@@ -76,7 +76,7 @@
   </macro>
   <macro name="author">
     <names variable="author">
-      <name delimiter=", "/>
+      <name delimiter=", " initialize-with=""/>
       <substitute>
         <names variable="composer"/>
         <names variable="illustrator"/>
