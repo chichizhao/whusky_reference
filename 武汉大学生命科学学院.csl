@@ -344,7 +344,7 @@
         <text macro="issued-date"/>
       </if>
       <else-if type="book chapter paper-conference periodical thesis" variable="archive archive-place publisher publisher-place page" match="any">
-        <group delimiter=": ">
+        <group delimiter=", ">
           <group delimiter=": ">
             <choose>
               <if variable="publisher publisher-place" match="any">
@@ -380,7 +380,7 @@
         <text macro="issued-date"/>
       </if>
       <else-if type="book chapter paper-conference periodical thesis" variable="archive archive-place original-publisher original-publisher-place page" match="any">
-        <group delimiter=": ">
+        <group delimiter=", ">
           <group delimiter=": ">
             <choose>
               <if variable="original-publisher original-publisher-place" match="any">
